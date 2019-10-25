@@ -16,7 +16,7 @@ select MIN(Fecha) as 'Orden de visitas por fecha' from Ticket group by Fecha
 select MAX(iPrecio) as 'Precios del mas barato al mas caro' from Menu group by iPrecio
 select COUNT(iIdMesa) as 'Total de mesas por restaurante' from Mesa group by iIdRestaurante
 select COUNT(iIdMesero) as 'Meseros por mesa' from Mesero group by iIdMesa
-select COUNT(iIdMesero) from Mesero group by iIdMesa having COUNT (iIdMesa)>1
+select COUNT(iIdMesero) from Mesero group by iIdMesa having COUNT (*)>2
 select COUNT(iIdCliente) as 'Compras de los clientes' from Pedido group by iIdCliente having COUNT(*)>5
 select COUNT(iIdMesa) from Ticket group by iIdMesa having COUNT(*)>5
 select COUNT(iIdRestaurante) from Mesa group by iIdRestaurante having COUNT(*)<10
