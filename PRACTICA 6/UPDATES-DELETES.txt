@@ -1,0 +1,11 @@
+delete from Cliente where iIdCliente = 14
+delete from Mesero where iIdMesero = 30
+delete from Ticket where iIdMesa = 13
+delete from Cliente where vNombreC = 'Hildagarde'
+delete from Cliente where NombreCompleto = 'Nessa Carlill Barthropp' 
+
+update Mesero set vNombreM = 'Pedro' where vNombreM = 'Zebulon' 
+update Cliente set vNombreC = 'Mario' where vNombreC = 'Kimbra'
+update Ticket set Fecha = '2019-5-30' where iIdTicket = 1
+update Mesa set iNumPer = 6 where iIdMesa = 7
+update Pedido set iIdProducto = 17 where iIdPedido = 3
